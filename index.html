@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="나를 소개하는 간단한 웹페이지">
+  <title>자기소개 | About Me</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; background: #f5f7fb; color: #243047; line-height: 1.7; }
+    .container { max-width: 760px; margin: 64px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 24px; padding: 48px; box-shadow: 0 14px 45px rgba(30, 45, 80, .08); }
+    .avatar { display: grid; place-items: center; width: 76px; height: 76px; border-radius: 22px; background: #e8edff; font-size: 36px; margin-bottom: 22px; }
+    .eyebrow { color: #5368b6; font-weight: 700; font-size: 14px; letter-spacing: .12em; }
+    h1 { margin: 6px 0 12px; font-size: clamp(28px, 5vw, 40px); line-height: 1.3; }
+    .intro { font-size: 17px; color: #536078; }
+    section { margin-top: 34px; }
+    h2 { font-size: 19px; margin-bottom: 12px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag { padding: 7px 13px; background: #eff2fb; border-radius: 999px; font-size: 14px; }
+    .contact { display: inline-block; margin-top: 12px; padding: 11px 18px; border-radius: 12px; background: #435cc7; color: white; text-decoration: none; font-weight: 600; }
+    .contact:hover { background: #3449a5; }
+    footer { text-align: center; color: #8791a4; margin-top: 24px; font-size: 13px; }
+    @media (max-width: 520px) { .container { margin: 24px auto; } .card { padding: 28px 24px; } }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="card">
+      <div class="avatar" aria-hidden="true">👋</div>
+      <div class="eyebrow">HELLO, NICE TO MEET YOU!</div>
+      <h1>안녕하세요!<br>저를 소개합니다.</h1>
+      <p class="intro">새로운 것을 배우고, 다양한 아이디어를 현실로 만드는 과정을 좋아합니다. 사람들과 소통하며 함께 성장하는 것을 중요하게 생각합니다.</p>
+      <section>
+        <h2>🙋 About Me</h2>
+        <p>안녕하세요! 저는 호기심이 많고 긍정적인 태도로 도전하는 사람입니다. 작은 경험에서도 배울 점을 찾고 꾸준히 발전하려고 노력합니다.</p>
+      </section>
+      <section>
+        <h2>✨ 관심 분야</h2>
+        <div class="tags"><span class="tag">IT · 기술</span><span class="tag">기획 · 아이디어</span><span class="tag">마케팅</span><span class="tag">영어 공부</span><span class="tag">영화 감상</span></div>
+      </section>
+      <section>
+        <h2>🎯 나의 목표</h2>
+        <p>배움을 멈추지 않고, 새로운 문제를 창의적으로 해결하며 주변에 긍정적인 영향을 주는 사람이 되고 싶습니다.</p>
+      </section>
+      <section>
+        <h2>✉️ Contact</h2>
+        <p>함께 이야기 나누고 싶다면 아래 버튼을 눌러 주세요.</p>
+        <!-- 아래 이메일 주소를 본인 주소로 바꿔 주세요. -->
+        <a class="contact" href="mailto:hello@example.com">이메일 보내기 →</a>
+      </section>
+    </article>
+    <footer>© 2026 My Introduction · Made with HTML & CSS</footer>
+  </main>
+</body>
+</html>
